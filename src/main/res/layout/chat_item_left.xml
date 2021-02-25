@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/receive_messages_layout"
+        android:layout_marginRight="100dp">
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="username"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_below="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="This is receive code"
+            android:id="@+id/show_message"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/show_message"
+            android:text="Time"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:paddingBottom="10dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

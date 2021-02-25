@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/receiver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/receive_messages_layout"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="9dp"
+            android:layout_marginLeft="6dp"
+            android:text="Username"
+            android:id="@+id/usernametv"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_below="@+id/usernametv"
+            android:id="@+id/receive_message_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This is test message"
+            android:textColor="#807d7d"
+            android:paddingTop="3dp"
+            android:paddingLeft="10dp"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/receive_message_text"
+            android:text="Time"
+            android:layout_toRightOf="@id/receive_message_text"
+            android:paddingBottom="10dp"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/sender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/send_messages_layout"
+        android:layout_marginTop="3dp"
+
+        >
+
+        <TextView
+            android:id="@+id/send_message_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="This is send message"
+            android:padding="10dp"
+            android:textColor="#807d7d"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"/>
+
+
+        <TextView
+            android:id="@+id/time2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/send_message_text"
+            android:text="Time"
+            android:layout_toRightOf="@+id/send_message_text"
+            android:layout_marginRight="15dp"
+            android:paddingBottom="10dp"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>
